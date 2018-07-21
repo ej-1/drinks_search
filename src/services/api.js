@@ -5,11 +5,10 @@ import fetch from "cross-fetch";
 const BASE_URL = "https://mock-api.drinks.test.siliconrhino.io";
 const EVENTS = "/events";
 
-const getDrinksEvents = (pageNumber, pageSize, searchTerm) => {
-  console.log(searchTerm);
+async function getDrinksEvents(pageNumber, pageSize, searchTerm) {
   const data = `?page=${pageNumber}&pageSize=${pageSize}&search=${searchTerm}`;
   const endpoint = BASE_URL + EVENTS + data;
-  fetch(endpoint, {
+  let response = await fetch(endpoint, {
     method: "GET", // *GET, POST, PUT, DELETE, etc.
     mode: "cors", // no-cors, cors, *same-origin
     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -20,14 +19,11 @@ const getDrinksEvents = (pageNumber, pageSize, searchTerm) => {
     },
     redirect: "follow", // manual, *follow, error
     referrer: "no-referrer" // no-referrer, *client
-  })
-    .then(response => {
-      return response.json();
-    })
-    .then(myJson => {
-      console.log(myJson);
-    });
-};
+  });
+
+  let reponse = await response.json();
+  return reponse;
+}
 
 /*
 Parameters:

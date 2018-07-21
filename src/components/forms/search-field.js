@@ -6,7 +6,7 @@ class SearchField extends Component {
     super(props);
     this.state = { value: "" };
 
-    this.state.getDrinksEvents = this.props.getDrinksEvents;
+    this.state.onSearchSubmit = this.props.onSearchSubmit;
   }
 
   handleChange = event => {
@@ -20,7 +20,7 @@ class SearchField extends Component {
         name="search-form"
         onSubmit={e => {
           e.preventDefault();
-          this.state.getDrinksEvents(1, 10, this.state.value);
+          this.state.onSearchSubmit(this.state.value);
         }}
       >
         <label>
