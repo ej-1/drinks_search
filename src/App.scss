@@ -46,11 +46,20 @@ form {
   margin-left: auto;
   margin-right: auto;
   font-size: 15px;
+  font-family: $primary-font-stack;
 
   td {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
     font-weight: $primary-font-weight;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  form {
+    .submit-button {
+      margin-top: 10px;
+    }
   }
 }
