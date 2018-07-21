@@ -24,12 +24,14 @@ class SearchField extends Component {
         }}
       >
         <input
+          class="search-input"
           type="text"
           value={this.state.value}
           name="search"
+          placeholder="Radisson"
           onChange={this.handleChange}
         />
-        <input class="submit-button" type="submit" value="Search" />
+        <input class="submit-button" type="submit" value="Search events" />
       </form>
     );
   }

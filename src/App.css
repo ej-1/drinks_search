@@ -2,18 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #dbb661;
-  height: 50px;
-  padding: 20px;
-  color: #4c3800;
-}
-
 .App-title {
   font-size: 1.5em;
   font-weight: 100;
@@ -27,25 +15,32 @@ h1 {
   font-size: 20px;
 }
 
-input {
+form {
+  background-color: #008190 !important;
+  padding: 50px;
+}
+
+.search-input {
   height: 40px !important;
   display: inline-block !important;
   margin-right: 10px !important;
   color: #008190 !important;
   border: 0.5px solid #5dab7c;
   font-size: 15px !important;
+  font-weight: 100;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   background-color: #fff;
   padding: 0px 5px 0px 5px;
 }
 
-form {
-  background-color: #008190 !important;
-  padding: 50px;
-}
-
 .submit-button {
+  height: 40px !important;
+  color: #008190 !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: #fff;
+  padding: 0px 5px 0px 5px;
   border: 1px solid #e5cb90 !important;
   border-radius: 5px;
   font-size: 10px !important;

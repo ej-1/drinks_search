@@ -8,7 +8,8 @@ class DrinksEventsList extends PureComponent {
       <tr key={event.location.name}>
         <td>{event.location.name}</td>
         <td>{event.title}</td>
-        <td>{event.time}</td>
+        <td>{new Date(event.time).toUTCString()}</td>
+        {/* MOVE THE toUTCString up*/}
       </tr>
     ));
     return <table class="drinks-events-table">{events}</table>;
