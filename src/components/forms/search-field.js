@@ -23,16 +23,13 @@ class SearchField extends Component {
           this.state.onSearchSubmit(this.state.value);
         }}
       >
-        <label>
-          Search:
-          <input
-            type="text"
-            value={this.state.value}
-            name="search"
-            onChange={this.handleChange}
-          />
-        </label>
-        <input type="submit" value="Submit" />
+        <input
+          type="text"
+          value={this.state.value}
+          name="search"
+          onChange={this.handleChange}
+        />
+        <input class="submit-button" type="submit" value="Search" />
       </form>
     );
   }

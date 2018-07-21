@@ -8,18 +8,61 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #dbb661;
   height: 50px;
   padding: 20px;
-  color: white;
+  color: #4c3800;
 }
 
 .App-title {
   font-size: 1.5em;
+  font-weight: 100;
 }
 
 .App-intro {
   font-size: large;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+input {
+  height: 40px !important;
+  display: inline-block !important;
+  margin-right: 10px !important;
+  color: #008190 !important;
+  border: 0.5px solid #5dab7c;
+  font-size: 15px !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: #fff;
+  padding: 0px 5px 0px 5px;
+}
+
+form {
+  background-color: #008190 !important;
+  padding: 50px;
+}
+
+.submit-button {
+  border: 1px solid #e5cb90 !important;
+  border-radius: 5px;
+  font-size: 10px !important;
+}
+
+.drinks-events-table {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+}
+
+.drinks-events-table td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  font-weight: 100;
 }
 
 @keyframes App-logo-spin {
