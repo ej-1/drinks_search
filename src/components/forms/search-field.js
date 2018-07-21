@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-//import PropTypes from "prop-types";
 
 class SearchField extends Component {
   constructor(props) {
     super(props);
     this.state = { value: "" };
-
-    this.state.onSearchSubmit = this.props.onSearchSubmit;
   }
 
   handleChange = event => {
@@ -21,15 +18,15 @@ class SearchField extends Component {
         name="search-form"
         onSubmit={e => {
           e.preventDefault();
-          this.state.onSearchSubmit(this.state.value);
+          this.props.onSearchSubmit(this.state.value);
         }}
       >
         <input
           class="input search-input"
           type="text"
-          value={this.state.value}
           name="search"
           placeholder="Radisson"
+          value={this.state.value}
           onChange={this.handleChange}
         />
         <input
