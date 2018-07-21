@@ -8,6 +8,16 @@ class DrinksEventsList extends PureComponent {
         <td>{event.location.name}</td>
         <td>{event.title}</td>
         <td>{new Date(event.time).toUTCString()}</td>
+        <td>
+          <a
+            target="_blank"
+            href={`http://www.google.com/maps/place/${
+              event.location.latitude
+            },${event.location.longitude}`}
+          >
+            See location
+          </a>
+        </td>
       </tr>
     ));
     return <table class="drinks-events-table">{events}</table>;
