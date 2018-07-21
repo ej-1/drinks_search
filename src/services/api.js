@@ -23,9 +23,7 @@ async function getDrinksEvents(pageNumber, pageSize, searchTerm) {
   const data = `?page=${pageNumber}&pageSize=${pageSize}&search=${searchTerm}`;
   const endpoint = GET_EVENTS_ENDPOINT + data;
   let response = await fetch(endpoint, REQUEST_CONFIG("GET"));
-
-  let reponse = await response.json();
-  return reponse;
+  return response.json();
 }
 
 export { getDrinksEvents };
