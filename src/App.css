@@ -1,73 +1,37 @@
-.App {
-  text-align: center;
-}
-
-.App-title {
-  font-size: 1.5em;
-  font-weight: 100;
-}
-
-.App-intro {
-  font-size: large;
-}
-
 h1 {
-  font-size: 20px;
-}
+  font-size: 20px; }
+
+.search-form {
+  text-align: center; }
 
 form {
-  background-color: #008190 !important;
-  padding: 50px;
-}
-
-.search-input {
-  height: 40px !important;
-  display: inline-block !important;
-  margin-right: 10px !important;
-  color: #008190 !important;
-  font-size: 15px !important;
-  font-weight: 100;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  background-color: #fff;
-  padding: 0px 5px 0px 5px;
-  border: 0px;
-  border-radius: 2px;
-}
-
-.submit-button {
-  height: 40px !important;
-  color: #008190 !important;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  background-color: #fff;
-  padding: 0px 5px 0px 5px;
-  border-radius: 5px;
-  font-size: 10px !important;
-  border: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+  background-color: #008190;
+  padding: 50px; }
+  form .input {
+    color: #008190;
+    height: 40px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.06em;
+    text-transform: uppercase; }
+  form .search-input {
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 0px 5px 0px 5px; }
+  form .submit-button {
+    font-size: 10px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px; }
 
 .drinks-events-table {
+  background-color: #fff;
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 15px;
-}
-
-.drinks-events-table td {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 20px;
-  font-weight: 100;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  font-size: 15px; }
+  .drinks-events-table td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-weight: 100; }
