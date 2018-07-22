@@ -18,7 +18,7 @@ class SearchRoute extends Component {
       searchTerm
     )
       .then(data => this.setState({ events: data }))
-      .catch(reason => console.log(reason.message));
+      .catch(error => console.log(error.message));
   };
 
   render() {
