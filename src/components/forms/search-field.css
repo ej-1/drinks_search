@@ -6,7 +6,7 @@ form .search-input, form .submit-button {
   height: 40px;
   font-family: Helvetica, sans-serif;
   font-weight: 100;
-  letter-spacing: 0.06em;
+  letter-spacing: 2px;
   text-transform: uppercase; }
 
 form {
