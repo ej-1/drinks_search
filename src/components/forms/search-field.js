@@ -15,7 +15,7 @@ class SearchField extends Component {
     return (
       <form
         id="search-form"
-        class="search-form"
+        className="search-form"
         name="search-form"
         onSubmit={e => {
           e.preventDefault();
@@ -23,14 +23,14 @@ class SearchField extends Component {
         }}
       >
         <input
-          class="search-input"
+          className="search-input"
           type="text"
           name="search"
           placeholder="Radisson"
           value={this.state.value}
           onChange={this.handleChange}
         />
-        <input class="submit-button" type="submit" value="Search events" />
+        <input className="submit-button" type="submit" value="Search events" />
       </form>
     );
   }
