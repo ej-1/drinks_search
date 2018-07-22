@@ -1,0 +1,27 @@
+.search-form {
+  text-align: center; }
+
+form .search-input, form .submit-button {
+  color: #008190;
+  height: 40px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.06em;
+  text-transform: uppercase; }
+
+form {
+  background-color: #008190;
+  padding: 50px; }
+  form .search-input {
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 0px 5px 0px 5px; }
+  form .submit-button {
+    font-size: 10px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px; }
+
+@media only screen and (max-width: 460px) {
+  form .submit-button {
+    margin-top: 10px; } }

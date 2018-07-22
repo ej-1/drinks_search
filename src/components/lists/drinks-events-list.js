@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
+import "../lists/drinks-events-list.css";
 
 class DrinksEventsList extends PureComponent {
   render() {

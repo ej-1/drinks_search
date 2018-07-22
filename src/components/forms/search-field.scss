@@ -1,13 +1,4 @@
-$primary-background: #008190;
-$secondary-background: #fff;
-$primary-input: #008190;
-$primary-font-stack: Helvetica, sans-serif;
-$primary-font-weight: 100;
-$form-element-height: 40px;
-
-h1 {
-  font-size: 20px;
-}
+@import "main";
 
 .search-form {
   text-align: center;
@@ -39,22 +30,6 @@ form {
     font-size: 10px;
     padding: 0px 5px 0px 5px;
     border-radius: 5px;
-  }
-}
-
-.drinks-events-table {
-  background-color: $secondary-background;
-  margin-top: 70px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 15px;
-  font-family: $primary-font-stack;
-
-  td {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    font-weight: $primary-font-weight;
   }
 }
 

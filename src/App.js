@@ -4,7 +4,7 @@ import SearchRoute from "./components/routes/SearchRoute";
 
 class App extends Component {
   render() {
-    return <div className="">{<SearchRoute />}</div>;
+    return <div className="app">{<SearchRoute />}</div>;
   }
 }
 
