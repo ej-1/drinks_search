@@ -4,16 +4,17 @@ h1 {
 .search-form {
   text-align: center; }
 
+form .search-input, form .submit-button {
+  color: #008190;
+  height: 40px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.06em;
+  text-transform: uppercase; }
+
 form {
   background-color: #008190;
   padding: 50px; }
-  form .input {
-    color: #008190;
-    height: 40px;
-    font-family: Helvetica, sans-serif;
-    font-weight: 100;
-    letter-spacing: 0.06em;
-    text-transform: uppercase; }
   form .search-input {
     display: inline-block;
     font-size: 15px;
