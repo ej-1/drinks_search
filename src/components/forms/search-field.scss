@@ -1,0 +1,42 @@
+@import "./main.scss";
+
+.search-form {
+  text-align: center;
+}
+
+%input-shared {
+  color: $primary-input;
+  height: $form-element-height;
+  font-family: $primary-font-stack;
+  font-weight: $primary-font-weight;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+form {
+  background-color: $primary-background;
+  padding: 50px;
+
+  .search-input {
+    @extend %input-shared;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 0px 5px 0px 5px;
+  }
+
+  .submit-button {
+    @extend %input-shared;
+    font-size: 10px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  form {
+    .submit-button {
+      margin-top: 10px;
+    }
+  }
+}
