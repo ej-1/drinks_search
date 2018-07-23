@@ -3,14 +3,14 @@ import { GET_EVENTS_ENDPOINT } from "../services/api-endpoints";
 
 const REQUEST_CONFIG = requestType => ({
   method: requestType,
-  mode: "cors", // no-cors, cors, *same-origin
-  cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-  credentials: "same-origin", // include, same-origin, *omit
+  mode: "cors",
+  cache: "default", // It is caching.
+  credentials: "same-origin",
   headers: {
     "Content-Type": "application/json; charset=utf-8"
   },
-  redirect: "follow", // manual, *follow, error
-  referrer: "no-referrer" // no-referrer, *client
+  redirect: "follow",
+  referrer: "no-referrer"
 });
 
 /*
